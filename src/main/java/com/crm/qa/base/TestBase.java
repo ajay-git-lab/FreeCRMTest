@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.crm.qa.util.TestUtil;
@@ -41,8 +42,8 @@ public class TestBase {
 			System.setProperty("webdriver.chrome.driver","C:\\Personal Documents\\Ajay\\AjayEclipseWS\\ChromeDriver\\chromedriver.exe");
 			 driver = new ChromeDriver();
 		} else if(browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver","C:\\Personal Documents\\Ajay\\AjayEclipseWS\\geckodriver\\geckodriver-v0.24.0-win64\\geckodriver.exe");
-			driver = new ChromeDriver();
+			System.setProperty("webdriver.gecko.driver","C:\\\\Personal Documents\\\\Ajay\\\\AjayEclipseWS\\\\geckodriver\\\\geckodriver.exe");
+			driver = new FirefoxDriver();
 		}
 		
 		e_driver = new EventFiringWebDriver(driver);
